@@ -12,7 +12,7 @@ const ContactUsEmbedded = () => {
                 <Script
                     id="tally-js"
                     src="https://tally.so/widgets/embed.js"
-                    onLoad={() => {
+                    onLoad={(Tally: { loadEmbeds: () => void }) => {
                         Tally.loadEmbeds();
                     }}
                 />
